@@ -1,4 +1,4 @@
-# Logistics Facility Location Agent
+# Logistics Facility Location with Agent
 
 A CLI-based **agentic logistics optimization system** that combines Mixed-Integer Linear Programming (MILP) with a Claude-powered agent loop. Users interact via natural language — the agent autonomously decides which optimization tools to call, runs the solver, compares scenarios, and delivers plain-language business insights.
 
@@ -211,6 +211,7 @@ Reports are saved automatically to the `results/` directory:
 | `whatif_output_v1.md`, `v2.md`, … | Versioned what-if comparison reports with baseline vs. scenario side-by-side |
 
 ---
+
 
 
 
