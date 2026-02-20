@@ -19,6 +19,10 @@ The optimizer uses a **two-phase MILP approach**:
 
 After establishing a baseline, users can ask natural language questions. The agent autonomously calls the solver tools to run what-if scenarios, compare results, and summarize findings.
 
+<img src="./cli-01.jpg" alt="Local File in Working Folder" width="400" />
+
+<img src="./cli-02.jpg" alt="Local File in Working Folder" width="800" />
+
 ---
 
 ## Architecture
@@ -65,7 +69,7 @@ main.py ──► LogisticsAgent (Claude API — agentic loop)
 
 ## Development Note
 
-This application was **developed entirely using Claude Code** following guidance documents in the `docs/` directory. The prototype author is not a professional software developer. The prototype is fully functional for its intended purpose; scalability and technical debt concerns are acknowledged.
+This application was **developed entirely using Claude Code** following guidance documents. The prototype author is not a professional software developer. The prototype is fully functional for its intended purpose; scalability and technical debt concerns are acknowledged.
 
 ---
 
@@ -208,22 +212,5 @@ Reports are saved automatically to the `results/` directory:
 
 ---
 
-## Agent Parameter Reference
-
-The agent maps natural language to structured modifications. Supported parameters:
-
-| Parameter | Description | Actions |
-|-----------|------------|---------|
-| `production_target` | Overall production volume (tons) | set / increase / decrease / multiply |
-| `facility_location` | Force a specific facility (exact site ID) | set |
-| `port_selection` | Force specific port(s) | set |
-| `freight_cost_inbound` | Inbound freight cost multiplier | multiply |
-| `freight_cost_outbound` | Outbound freight cost multiplier | multiply |
-| `freight_cost_sea` | Sea freight cost multiplier | multiply |
-| `yield_factor` | Material conversion efficiency (requires `target.material`) | set / multiply |
-| `raw_material_availability` | Volume at a specific site/material (requires `target.site` + `target.material`) | set / multiply |
-| `max_consumption` | Max fraction of total mix (requires `target.material`) | set / multiply |
-
----
-
 **Built with Pyomo + HiGHS + Claude API**
+
