@@ -212,5 +212,6 @@ Reports are saved automatically to the `results/` directory:
 
 ---
 
-**Built with Pyomo + HiGHS + Claude API**
+
+
 
