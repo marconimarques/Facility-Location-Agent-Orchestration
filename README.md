@@ -19,9 +19,13 @@ The optimizer uses a **two-phase MILP approach**:
 
 After establishing a baseline, users can ask natural language questions. The agent autonomously calls the solver tools to run what-if scenarios, compare results, and summarize findings.
 
+<p align="center">
 <img src="./cli-01.jpg" alt="Local File in Working Folder" width="400" />
+</p>
 
+<p align="center">
 <img src="./cli-02.jpg" alt="Local File in Working Folder" width="800" />
+</p>
 
 ---
 
@@ -211,6 +215,7 @@ Reports are saved automatically to the `results/` directory:
 | `whatif_output_v1.md`, `v2.md`, … | Versioned what-if comparison reports with baseline vs. scenario side-by-side |
 
 ---
+
 
 
 
